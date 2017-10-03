@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk update; apk add bash ansible 
+RUN apk update; apk add bash ansible py-pip; pip2 install boto boto3
 
 WORKDIR /code
 
